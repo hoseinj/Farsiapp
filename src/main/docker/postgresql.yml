@@ -1,0 +1,11 @@
+version: '2'
+services:
+  farsiapp-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/Farsiapp/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=Farsiapp
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
